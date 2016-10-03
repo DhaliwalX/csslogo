@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<title>CSS Workshop</title>
+<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<style>
+html, body {
+	margin-top: 1em;
+	width: 100%;
+}
+body {
+	color: #C4C4C4;
+	background-color: #0A2F55;
+	font-family: "Space Mono", monospace;
+	display: block;
+	max-width: 800px;
+	margin: auto;
+}
+
+img {
+	width: 300px;
+	margin: auto;
+	display: block;
+	align-content: center;
+}
+
+.sbutton{
+	width:100%;
+	padding-bottom:1em;
+}
+
+a, button {
+	text-decoration: none;
+	color: #C4C4C4;
+	border: 1px solid #c4c4c4;
+	padding: 1em;
+	transition-property: color, background-color;
+	transition-duration: 200ms;
+}
+
+a:hover, button:hover {
+	background-color: #c4c4c4;
+	color: #0A2F55;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+}
+
+.no-inline {
+	display: block;
+	list-style: normal;
+}
+
+ul.normal-list-style {
+	list-style-type: square;
+}
+.register-button {
+	float: right;
+	position: relative;
+	margin-top: -10em;
+}
+
+.submit-button {
+	background-color: #0A2F55;
+	color: #c4c4c4;
+	font-size: 1em;
+	margin: auto;
+	display: block;
+}
+
+div {
+	display: block;
+	padding: 1em;
+}
+
+.input-text-box {
+	padding: 0.5em;
+	width: 45%;
+}
+
+.input-text-box:focus {
+	box-shadow: 0 0 3px solid #c4c4c4;
+}
+</style>
+</head>
+<body>
+	<img src="images/logo.png">
+	<form type="submit">
+	<fieldset>
+	<legend>Personal Information</legend>
+		<div>
+			<input type="text" placeholder="First Name" class="input-text-box" autofocus>
+		</div>
+		<div>
+			<input type="text" placeholder="Last Name" class="input-text-box" >
+		</div>
+		<div>
+			<input type="integer" placeholder="SID" class="input-text-box" >
+		</div>
+		<div>
+			<input type="email" placeholder="Email Id" class="input-text-box" >
+		</div>
+		</fieldset>
+		<br>
+		<br>
+		<fieldset>
+		<legend>Registration Detail</legend>
+		<div>
+			<input type="text" placeholder="Username" class="input-text-box">
+		</div>
+
+		<div>
+			<input type="password" placeholder="Password" class="input-text-box">
+		</div>
+		</fieldset>
+		<br>
+		<div class="sbutton">
+		<button class="submit-button" type="submit"> Register</button>
+		</div>
+	</form>
+</body>
+</html>
